@@ -1,0 +1,110 @@
+* {
+  background-color: aliceblue;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  overflow: auto;
+  margin: auto;
+  padding: auto;
+}
+header {
+  color: lightblue;
+  text-align: center;
+  font-weight: lighter;
+  display: flex;
+  /* gap: 1rem; */
+  width: 100%;
+  height: 30vh;
+  position: relative;
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+ul {
+  list-style: none;
+  font-weight: lighter;
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+}
+.section-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  color: black;
+  font-size: 0.5rem;
+  margin: 0 30px;
+}
+a {
+  color: #000;
+}
+h1 {
+  color: rgb(112, 112, 225);
+  font-size: 1rem;
+}
+svg {
+  width: 4vw;
+  height: 4vh;
+  fill: skyblue;
+}
+
+svg.facebook:hover path {
+  /* width: 30px;
+  height: 30px; */
+  fill: blue;
+}
+
+svg.twitter-x:hover path {
+  /* width: 30px;
+  height: 30px; */
+  fill: black;
+}
+
+svg.instagram:hover path {
+  /* width: 30px;
+  height: 30px; */
+  fill: purple;
+  /* background-color: -webkit-linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  background-color: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); */
+}
+
+pre {
+  color: rgb(112, 112, 225);
+}
+#section-2-item {
+  font-size: 0.6rem;
+}
+button {
+  background-color: rgb(0, 0, 255);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 0.5rem;
+  cursor: pointer;
+}
+.pos {
+  /* transform: rotate(270deg);
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: rotate(270deg);
+  transform-origin: top left; */
+  position: absolute; /* Position the text element absolutely within the container */
+  top: 50%; /* Position it vertically in the middle of the container */
+  right: 0; /* Position it at the right edge of the container */
+  transform-origin: right center; /* Set the rotation origin to the right center */
+  transform: translateY(-50%) rotate(270deg); /* Rotate the text 270 degrees and center it vertically */
+  padding: 10px; /* Add some padding for better visibility */
+  z-index: -1;
+}
+.pos img {
+  width: 20vw;
+  display: block;
+  margin-left: 100%;
+  margin-right: 0;
+  object-fit: cover; /* Crop the image to cover the entire container */
+  position: absolute; /* Ensure proper stacking order with z-index */
+  z-index: 2;
+  top: 50%;
+}
